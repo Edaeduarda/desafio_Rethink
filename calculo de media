@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang "en">
+  <heand>
+    <meta charset="UTF-8">
+    <meta name "viewport" content="width-device-width,initial-scale-1.0">
+    <title>Cadastro</title>
+  </heand>
+  <body>
+    <input type= "number" id= "n1" />
+    <input type= "number" id= "n2" />
+    <input type= "number" id= "n3" />
+    <input type= "number" id= "n4" />
+    <input type= "number" id= "n5" />
+    <input type= "number" id= "n6" />
+    <input type= "number" id= "n7" />
+
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular() {
+            var n1 = document.getElementByIdn ("n1").value
+            var n2= document.getElementByIdn ("n2").value
+            var n3= document.getElementByIdn ("n3").value
+            var n4= document.getElementByIdn ("n4").value
+            var n5= document.getElementByIdn ("n5").value
+            var n6= document.getElementByIdn ("n6").value
+            var n7= document.getElementByIdn ("n7").value
+
+
+            var media = (Number(n1)+ Number(n2)+ Number(n3)+ Number(n4 )+ Number(n5)+ Number(n6)+ Number(n7)) / 7
+
+            alert(` A media das idades e: ${media}`)
+            
+
+            console.log(` A media das idades e: ${media}`)
+        }
+    </script>
